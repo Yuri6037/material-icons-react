@@ -1,38 +1,46 @@
 {
-  "name": "material-icons-react",
-  "version": "1.0.3",
-  "description": "Google material icons implementation for React",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/logtrace/material-icons-react.git"
+  "_from": "git+https://github.com/Ksedline/material-icons-react.git",
+  "_id": "material-icons-react@1.0.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/material-icons-react",
+  "_phantomChildren": {
+    "create-react-class": "15.6.3",
+    "fbjs": "0.8.17",
+    "loose-envify": "1.4.0",
+    "object-assign": "4.1.1",
+    "prop-types": "15.7.2"
   },
-  "author": "Sithum Nissanka",
-  "license": "MIT",
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/Ksedline/material-icons-react.git",
+    "rawSpec": "https://github.com/Ksedline/material-icons-react.git",
+    "saveSpec": "git+https://github.com/Ksedline/material-icons-react.git",
+    "fetchSpec": "https://github.com/Ksedline/material-icons-react.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Ksedline/material-icons-react.git#4432c8d667e8d956005514b615e221d468b649df",
+  "_spec": "https://github.com/Ksedline/material-icons-react.git",
+  "_where": "/Users/ksedline/playground/next-portfolio",
+  "author": {
+    "name": "Sithum Nissanka"
+  },
   "bugs": {
     "url": "https://github.com/logtrace/material-icons-react/issues"
   },
-  "homepage": "https://github.com/logtrace/material-icons-react",
-  "keywords": [
-    "react-component",
-    "react",
-    "material-icons",
-    "material design",
-    "google",
-    "material-ui"
-  ],
-  "options": {
-    "mocha": "--require ignore-styles --require scripts/mocha_runner src/**/__tests__/**/*.js"
+  "bundleDependencies": [],
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "webfontloader": "^1.6.28"
   },
-  "scripts": {
-    "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --copy-files --out-dir ./dist",
-    "build": "npm run test && babel --plugins transform-es2015-modules-umd src --ignore __tests__ --copy-files --out-dir ./dist",
-    "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix",
-    "testonly": "mocha $npm_package_options_mocha",
-    "test": "npm run lint && npm run testonly",
-    "test-watch": "npm run testonly -- --watch --watch-extensions js",
-    "semantic-release": "semantic-release"
-  },
+  "deprecated": false,
+  "description": "Google material icons implementation for React",
   "devDependencies": {
     "babel-cli": "^6.6.4",
     "babel-core": "^6.7.4",
@@ -59,14 +67,37 @@
     "semantic-release": "^15.8.1",
     "sinon": "^1.17.3"
   },
+  "homepage": "https://github.com/logtrace/material-icons-react",
+  "keywords": [
+    "react-component",
+    "react",
+    "material-icons",
+    "material design",
+    "google",
+    "material-ui"
+  ],
+  "license": "MIT",
+  "name": "material-icons-react",
+  "options": {
+    "mocha": "--require ignore-styles --require scripts/mocha_runner src/**/__tests__/**/*.js"
+  },
   "peerDependencies": {
     "react": "~0.14.8 || ^15.0.0",
     "react-dom": "~0.14.8 || ^15.0.0"
   },
-  "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0",
-    "webfontloader": "^1.6.28"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logtrace/material-icons-react.git"
+  },
+  "scripts": {
+    "build": "babel --plugins transform-es2015-modules-umd,transform-object-rest-spread src --ignore __tests__ --copy-files --out-dir ./dist",
+    "lint": "eslint ./src",
+    "lintfix": "eslint ./src --fix",
+    "prepublish": "babel --plugins transform-object-rest-spread,transform-es2015-modules-umd src --ignore __tests__ --copy-files --out-dir ./dist",
+    "semantic-release": "semantic-release",
+    "test": "npx run lint && npm run testonly",
+    "test-watch": "npm run testonly -- --watch --watch-extensions js",
+    "testonly": "npx run mocha $npm_package_options_mocha"
+  },
+  "version": "1.0.3"
 }
