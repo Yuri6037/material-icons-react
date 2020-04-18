@@ -44,7 +44,6 @@
     "webfontloader": "^1.6.28"
   },
   "deprecated": false,
-  "description": "Google material icons implementation for React",
   "devDependencies": {
     "babel-cli": "^6.6.4",
     "babel-core": "^6.7.4",
@@ -81,17 +80,12 @@
     "material-ui"
   ],
   "license": "MIT",
-  "name": "material-icons-react",
   "options": {
     "mocha": "--require ignore-styles --require scripts/mocha_runner src/**/__tests__/**/*.js"
   },
   "peerDependencies": {
     "react": "~0.14.8 || ^15.0.0",
     "react-dom": "~0.14.8 || ^15.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/logtrace/material-icons-react.git"
   },
   "scripts": {
     "build": "babel --plugins transform-es2015-modules-umd,transform-object-rest-spread src --ignore __tests__ --copy-files --out-dir ./dist",
@@ -102,6 +96,5 @@
     "test": "npx run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
     "testonly": "npx run mocha $npm_package_options_mocha"
-  },
-  "version": "1.0.4"
+  }
 }
