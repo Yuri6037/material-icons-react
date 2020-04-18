@@ -1,6 +1,6 @@
 {
   "_from": "git+https://github.com/Ksedline/material-icons-react.git",
-  "_id": "material-icons-react@1.0.3",
+  "_id": "material-icons-react@1.0.4",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/material-icons-react",
@@ -12,6 +12,10 @@
     "prop-types": "15.7.2"
   },
   "_requested": {
+  "name": "material-icons-react",
+  "version": "1.0.4",
+  "description": "Google material icons implementation for React",
+  "repository": {
     "type": "git",
     "raw": "https://github.com/Ksedline/material-icons-react.git",
     "rawSpec": "https://github.com/Ksedline/material-icons-react.git",
@@ -99,5 +103,5 @@
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
     "testonly": "npx run mocha $npm_package_options_mocha"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
