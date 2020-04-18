@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import WebFont from 'webfontloader';
 
-import './index.css';
 import { sizes, light, dark, mdInactive } from './config/mappings';
 
 class MaterialIcon extends Component {
