@@ -64,6 +64,7 @@
     "react-dom": "~0.14.8 || ^15.0.0"
   },
   "scripts": {
+    "install": "npm run build",
     "build": "babel src --ignore __tests__ --copy-files --out-dir ./dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
