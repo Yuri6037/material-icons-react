@@ -1,16 +1,4 @@
 {
-  "_from": "git+https://github.com/Ksedline/material-icons-react.git",
-  "_id": "material-icons-react@1.0.4",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/material-icons-react",
-  "_phantomChildren": {
-    "create-react-class": "15.6.3",
-    "fbjs": "0.8.17",
-    "loose-envify": "1.4.0",
-    "object-assign": "4.1.1",
-    "prop-types": "15.7.2"
-  },
   "name": "material-icons-react",
   "version": "1.0.4",
   "description": "Google material icons implementation for React",
@@ -22,20 +10,12 @@
     "fetchSpec": "https://github.com/Ksedline/material-icons-react.git",
     "gitCommittish": null
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/Ksedline/material-icons-react.git#4432c8d667e8d956005514b615e221d468b649df",
-  "_spec": "https://github.com/Ksedline/material-icons-react.git",
-  "_where": "/Users/ksedline/playground/next-portfolio",
   "author": {
     "name": "Sithum Nissanka"
   },
   "bugs": {
     "url": "https://github.com/logtrace/material-icons-react/issues"
   },
-  "bundleDependencies": [],
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^15.0.0",
@@ -89,8 +69,8 @@
     "lintfix": "eslint ./src --fix",
     "prepublish": "babel src --ignore __tests__ --copy-files --out-dir ./dist",
     "semantic-release": "semantic-release",
-    "test": "npx run lint && npm run testonly",
+    "test": "npm run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
-    "testonly": "npx run mocha $npm_package_options_mocha"
+    "testonly": "npm run mocha $npm_package_options_mocha"
   }
 }
