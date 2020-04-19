@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/logtrace/material-icons-react/issues"
   },
+  "types": "./index.d.ts",
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^15.0.0",
