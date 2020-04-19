@@ -64,7 +64,7 @@
     "react-dom": "~0.14.8 || ^15.0.0"
   },
   "scripts": {
-    "build": "npx babel-cli --plugins transform-es2015-modules-umd,transform-object-rest-spread src --ignore __tests__ --copy-files --out-dir ./dist",
+    "build": "babel src --ignore __tests__ --copy-files --out-dir ./dist",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "prepublish": "babel src --ignore __tests__ --copy-files --out-dir ./dist",
