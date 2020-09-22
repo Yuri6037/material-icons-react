@@ -8,6 +8,6 @@ interface Props {
   color?: string;
 }
 
-declare function MaterialIcon(props: Props): React.ReactNode;
+declare function MaterialIcon(props: Props): any;
 
 export default MaterialIcon;
